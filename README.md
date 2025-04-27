@@ -7,7 +7,7 @@ Crafted with React, styled using Tailwind CSS, animated using Framer Motion and 
 
 ## 🚀 Live Demo
 
-👉 [Click Here to View Live](https://sparklehood-project.vercel.app/)
+👉 [Click Here to View Live]()
 
 ---
 
@@ -76,8 +76,8 @@ This project is licensed under the **MIT License**.
 
 ## 🙋‍♂️ Author
 
-- [Nakul](https://github.com/Arjun9234)
+- [Arjun Arora](https://github.com/Arjun9234)
 
 ---
 
-# 🌟 If you like this project, give it a ⭐️ to support!
+# 🌟 If you find this project helpful, please consider giving it a ⭐️ — your support means a lot!
