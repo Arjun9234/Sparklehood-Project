@@ -7,27 +7,27 @@ const Header = ({ onNewIncident }) => {
 
   return (
     <motion.header 
-      className="sticky top-0 z-10 glassmorphism"
+      className="sticky top-0 z-10 bg-white dark:bg-gray-900 shadow-md"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ type: "spring", stiffness: 100, damping: 20 }}
+      transition={{ type: "spring", stiffness: 80, damping: 15 }}
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <motion.div 
-            className="flex items-center space-x-4"
+            className="flex items-center space-x-3"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
             <motion.div 
-              className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 via-secondary-500 to-accent-500 flex items-center justify-center shadow-lg"
-              whileHover={{ scale: 1.05, rotate: 5 }}
+              className="w-10 h-10 rounded-lg bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-md"
+              whileHover={{ scale: 1.08, rotate: 8 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="text-white font-bold text-xl">AI</span>
+              <span className="text-white font-extrabold text-lg">AI</span>
             </motion.div>
-            <h1 className="text-xl md:text-2xl font-bold">
+            <h1 className="text-lg md:text-2xl font-semibold text-gray-800 dark:text-white">
               AI Safety Incident Dashboard
             </h1>
           </motion.div>
@@ -35,7 +35,7 @@ const Header = ({ onNewIncident }) => {
           <div className="flex items-center space-x-4">
             <motion.button
               onClick={onNewIncident}
-              className="btn btn-primary flex items-center"
+              className="flex items-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg shadow-md transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: -20 }}
@@ -48,13 +48,13 @@ const Header = ({ onNewIncident }) => {
 
             <motion.button
               onClick={toggleTheme}
-              className="p-2 rounded-full glassmorphism text-gray-800 dark:text-gray-200 shadow-lg"
-              whileHover={{ scale: 1.1, rotate: 180 }}
+              className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 shadow-md"
+              whileHover={{ scale: 1.15, rotate: 180 }}
               whileTap={{ scale: 0.9 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.4 }}
               aria-label="Toggle theme"
             >
-              {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
+              {isDarkMode ? <FiSun size={22} /> : <FiMoon size={22} />}
             </motion.button>
           </div>
         </div>
