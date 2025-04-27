@@ -1,4 +1,4 @@
-# 🚨 AI Safety Incident DashBoard
+# 🛡️ AI Safety Incident DashBoard
 
 An intuitive dashboard for tracking, analyzing, and addressing AI safety incidents — streamlined, modern, and mobile-friendly.
 Crafted with React, styled using Tailwind CSS, animated using Framer Motion and designed with care 💡.
